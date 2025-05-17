@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       <PageLayout section={{
         ...pageSections.home[0],
         backgroundImage: window.innerWidth < 768 ? pageSections.home[0].mobileBackgroundImage : pageSections.home[0].backgroundImage
-      }} className="border-r-red-600">
+      }}>
         <div className="flex flex-col items-center text-center min-h-[calc(100vh-8rem)] relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -43,8 +43,8 @@ const Home: React.FC = () => {
       <PageLayout section={{
         ...pageSections.home[1],
         backgroundImage: window.innerWidth < 768 ? pageSections.home[1].mobileBackgroundImage : pageSections.home[1].backgroundImage
-      }}>
-        <div className="min-h-[calc(100vh-8rem)] max-w-5xl mx-auto px-4  mt-52">
+      }} >
+        <div className="min-h-[calc(100vh-8rem)] max-w-5xl mx-auto px-4  mt-52 ">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
             {embedData.musicReleases?.map((release: any) => {
               if (!release.featured && !release.latest) return null;
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
               );
             })}
           </div>
-          <div className="flex justify-center gap-4 sm:gap-8">
+          <div className="flex justify-center gap-4 sm:gap-8 ">
             <Link
               to="/music"
               className="flex items-center justify-center transition-all duration-300 group"

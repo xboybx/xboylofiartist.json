@@ -58,13 +58,13 @@ export const pageSections: Record<string, PageSection[]> = {
       id: 'hero',
       title: 'Welcome',
       backgroundImage: '/hero.gif',
-      mobileBackgroundImage: '/forest.webp'
+      mobileBackgroundImage: 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm5venkzY2NxbnBqNzF6dGphcXVtMGx0NmJocGVhN2xvaWxiOGNmMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1yld7nW3oQ2IyRubUm/giphy.gif'
     },
     {
       id: 'navigation',
       title: 'Navigation',
       backgroundImage: '/forest.webp',
-      mobileBackgroundImage: '/hero.gif'
+      mobileBackgroundImage: 'https://media.giphy.com/media/f4Oqzx1qsEyyKqSx8A/giphy.gif?cid=ecf05e47tos2o2hkeg0ljr7unc6dkwgnt2czii933hpdafwv&ep=v1_gifs_search&rid=giphy.gif&ct=g'
     },  {
       id: '',
       title: '',
