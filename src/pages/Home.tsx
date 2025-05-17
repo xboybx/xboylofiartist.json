@@ -22,7 +22,10 @@ const Home: React.FC = () => {
     <>
       <PageLayout section={{
         ...pageSections.home[0],
-        backgroundImage: window.innerWidth < 768 ? pageSections.home[0].mobileBackgroundImage : pageSections.home[0].backgroundImage
+        backgroundImage: window.innerWidth < 768 ? pageSections.home[0].mobileBackgroundImage : pageSections.home[0].backgroundImage,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
       }}>
         <div className="flex flex-col items-center text-center min-h-[calc(100vh-8rem)] relative">
           <motion.div
@@ -42,7 +45,10 @@ const Home: React.FC = () => {
       
       <PageLayout section={{
         ...pageSections.home[1],
-        backgroundImage: window.innerWidth < 768 ? pageSections.home[1].mobileBackgroundImage : pageSections.home[1].backgroundImage
+        backgroundImage: window.innerWidth < 768 ? pageSections.home[1].mobileBackgroundImage : pageSections.home[1].backgroundImage,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
       }} >
         <div className="min-h-[calc(100vh-8rem)] max-w-5xl mx-auto px-4  mt-52 ">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
