@@ -1,0 +1,125 @@
+{
+  "embedCode": "<iframe width=\"100%\" height=\"80  \" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2097426051&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/where-water-sleeps\" title=\"Where Water Sleeps\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Where Water Sleeps</a></div>",
+  "embedType": "spotify",
+  "musicReleases": [
+    {
+      "id": "release-1",
+      "title": "Ethereal",
+      "releaseDate": "2025-05-10",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273bccc390dcbde8753dde6d6a0",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/7a2PlGJeBOdusRzKzrwltl?si=7472a6f1e6a742d7",
+        "appleMusic": "https://music.apple.com/in/album/ethereal/1812480911?i=1812480916",
+        "youtube": "https://youtu.be/fnZHxSbfeIg?si=2ZdLrv2TmHvwT-4j"
+      },
+      "featured": false,
+      "latest": true,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7a2PlGJeBOdusRzKzrwltl?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": "release-2",
+      "title": "Tanoshi",
+      "releaseDate": "2025-04-30",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273cc8159732b624efe62db6431",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/4q6rtpF5vHHRqpvIX96dJ1?si=c783c8cbe31b48eb",
+        "appleMusic": "https://music.apple.com/in/album/tanoshi/1807346366?i=1807346368",
+        "youtube": "https://youtu.be/G2gLFHBHJzE?si=unC-W0Lrm6YeGubc"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4q6rtpF5vHHRqpvIX96dJ1?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": "release-3",
+      "title": "Slow Down",
+      "releaseDate": "2025-04-19",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273035408478e480d35d0aacd90",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/0Cc5rJer1dD979xqBKd5JD?si=1c024405b5ea46b8",
+        "appleMusic": "https://music.apple.com/in/album/slow-down/1806709752?i=1806709756",
+        "youtube": "https://youtu.be/8ELqsq1yY1o?si=reAQBW2KHsDTW_JZ"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/0Cc5rJer1dD979xqBKd5JD?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": "release-4",
+      "title": "Serene Drift",
+      "releaseDate": "2025-04-06",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273f1c98ae5169f00aeede6bfbf",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/7fWk3Ome9945Z940L5RIYi?si=9c71ff3ce59d46ef",
+        "appleMusic": "https://music.apple.com/in/album/serene-drift/1805512798?i=1805512799",
+        "youtube": "https://youtu.be/klplaLw9Sl8?si=RVhfmHGhN1RylPGS"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7fWk3Ome9945Z940L5RIYi?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": "release-5",
+      "title": "Leisure",
+      "releaseDate": "2025-04-01",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273deb52f725667419c7cb1836b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/2FK9SzCkwYqdwTxABUIcJa?si=b622d7772db646b2",
+        "appleMusic": "https://music.apple.com/in/album/leisure/1805504273?i=1805504293",
+        "youtube": "https://youtu.be/bMQsRZ_1bik?si=fGwX99clM8bQ9QRT"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2FK9SzCkwYqdwTxABUIcJa?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": "release-6",
+      "title": "Slow Dunes",
+      "releaseDate": "2025-03-30",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/2gHSuhs7zAXoebjsArO8cw?si=e3ed3aa7acd14529",
+        "appleMusic": "https://music.apple.com/in/album/slow-dunes/1806071436?i=1806071442",
+        "youtube": "https://youtu.be/on5rHHBFgOU?si=DZoJPeDa8ks56weP"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2gHSuhs7zAXoebjsArO8cw?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    }, {
+      "id": "release-8",
+      "title": "Haven",
+      "releaseDate": "2025-03-25",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/380iUBmTxZPpNsR6hjaJyF?si=DZoJPeDa8ks56weP",
+        "appleMusic": "https://music.apple.com/in/album/haven/1806071436?i=1806071442",
+        "youtube": "https://youtu.be/on5rHHBFgOU?si=DZoJPeDa8ks56weP"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/380iUBmTxZPpNsR6hjaJyF?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": "release-9",
+      "title": "Cosmic Pause",
+      "releaseDate": "2025-03-20",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/2hpatfMhA7TGlTkCZXbrBu?si=DZoJPeDa8ks56weP",
+        "appleMusic": "https://music.apple.com/in/album/cosmic-pause/1806071436?i=1806071442",
+        "youtube": "https://youtu.be/on5rHHBFgOU?si=DZoJPeDa8ks56weP"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2hpatfMhA7TGlTkCZXbrBu?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    }
+  ]
+}
