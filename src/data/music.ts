@@ -57,14 +57,14 @@ export const pageSections: Record<string, PageSection[]> = {
     {
       id: 'hero',
       title: 'Welcome',
-      backgroundImage: '/hero.gif',
-      mobileBackgroundImage: 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm5venkzY2NxbnBqNzF6dGphcXVtMGx0NmJocGVhN2xvaWxiOGNmMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1yld7nW3oQ2IyRubUm/giphy.gif'
+      backgroundImage: 'https://wallpapercat.com/w/middle-retina/b/2/4/5823981-3840x2160-desktop-hd-lofi-forest-background.jpg',
+      mobileBackgroundImage: 'https://wallpapercat.com/w/middle-retina/b/2/4/5823981-3840x2160-desktop-hd-lofi-forest-background.jpg'
     },
     {
       id: 'navigation',
       title: 'Navigation',
-      backgroundImage: '/forest.webp',
-      mobileBackgroundImage: 'https://media.giphy.com/media/f4Oqzx1qsEyyKqSx8A/giphy.gif?cid=ecf05e47tos2o2hkeg0ljr7unc6dkwgnt2czii933hpdafwv&ep=v1_gifs_search&rid=giphy.gif&ct=g'
+      backgroundImage: 'https://wallpapercat.com/w/full/2/3/9/5823958-3840x2160-desktop-hd-lofi-forest-background-photo.jpg',
+      mobileBackgroundImage: 'https://wallpapercat.com/w/middle-retina/1/e/a/5823954-4100x2310-desktop-hd-lofi-forest-background.jpg'
     },  {
       id: '',
       title: '',

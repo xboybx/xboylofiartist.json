@@ -24,6 +24,11 @@ const Navbar: React.FC = () => {
             </NavLink>
           </div>
 
+          <div className="hidden md:flex justify-center flex-1">
+            {/* Music player placeholder for merged state */}
+            <div id="music-player-navbar-placeholder" className="w-[320px] h-[80px]"></div>
+          </div>
+
           <div className="hidden md:block">
             <div className="ml-10 flex space-x-8 ">       
           <motion.div
