@@ -5,9 +5,9 @@ import MusicPlayer from '../MusicPlayer';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white/5 backdrop-blur-sm border-t border-white/10 mt-auto w-full mb-2 rounded-full flex">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center space-y-4 ">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col  space-y-2">
         <div className="md:flex md:items-center md:justify-between w-full items-center space-x-6">
-          <div className="flex justify-center md:justify-start space-x-6">
+          <div className="flex justify-center space-x-6 w-full">
            <a href="https://www.instagram.com/xboy.bx/" target='__main' className="icon-marquee text-white hover:text-gray-300 transition-colors" aria-label="Instagram">
               <RiInstagramFill size={24} />
             </a>
@@ -32,9 +32,7 @@ const Footer: React.FC = () => {
         </div>
         
       
-          <p className="text-center text-white/70 text-sm">
-            &copy; {new Date().getFullYear()} X.BOY. All rights reserved.
-          </p>
+          <p className="text-center text-white/70 text-sm max-w-md mx-auto">Click any music platform above to experience the soothing lofi beats of X.BOY.</p>
       
       </div>
     </footer>

@@ -58,7 +58,8 @@ const Home: React.FC = () => {
               onClick={() => setShowUpdates(v => !v)}
             >
               <span className="text-white text-xs">New Updates</span>
-              <svg className={`w-6 h-6 text-white transition-transform duration-300 ${showUpdates ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              
+              <svg className={`w-6 h-6 mt-1 text-white transition-transform duration-300 ${showUpdates ? 'rotate-180' : 'rotate-0'}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
             </button>
             {showUpdates && (
               <div className="mt-4 bg-white/10 border border-white/20 rounded-lg p-4 w-full max-w-md mx-auto shadow-lg backdrop-blur-sm">
@@ -92,7 +93,7 @@ const Home: React.FC = () => {
         ...pageSections.home[1],
         backgroundImage: window.innerWidth < 768 ? pageSections.home[1].mobileBackgroundImage : pageSections.home[1].backgroundImage,
       }} >
-        <div id="second-section" className="min-h-[calc(100vh-8rem)] max-w-5xl mx-auto px-4 mt-5 ">
+        <div id="second-section" className="min-h-[calc(100vh-8rem)] max-w-5xl mx-auto px-4 mt-20 ">
           <div className="flex flex-col sm:flex-row items-start justify-between gap-8 mb-8 min-h-[180px]">
             <div className="flex flex-col items-start w-full sm:w-1/2">
               <h2 className="text-white text-xl sm:text-2xl font-bold mb-4">Latest Release</h2>
@@ -107,7 +108,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col items-start w-full sm:w-1/2">
+            <div className="flex flex-col items-start w-full sm:w-1/2 ">
               <h2 className="text-white text-xl sm:text-2xl font-bold mb-4">Featured Music</h2>
               <div className="flex flex-col gap-4 w-full">
                 {embedData.musicReleases?.filter((release: any) => release.featured).map((release: any) => (
@@ -138,18 +139,16 @@ const Home: React.FC = () => {
                 About
               </span>
             </Link>
-          </div>
+          </div>  
         </div>
       </PageLayout>
 
-      <div className="min-h-[calc(100vh-8rem)] relative flex items-center justify-center bg-[url(/dad.gif)] bg-bottom">
-        {/* <LofiVisualizer /> */}
-        <p className="italic text-white py-32 px-4 text-center text-xl relative z-10">
-          "Myself isn't Loud. Me is Music. Intuition is the only Listener"
-        </p>
-      </div>
-
-      {/* Removed floating MusicPlayer as it is now in Footer */}
+        {/* <div className="min-h-[calc(100vh-8rem)] relative flex items-center justify-center bg-[url(/dad.gif)] bg-bottom">
+          <p className="italic text-white py-32 px-4 text-center text-xl relative z-10">
+            "Myself isn't Loud. Me is Music. Intuition is the only Listener"
+          </p>
+      </div> */}
+  
     </>
   );
 };
