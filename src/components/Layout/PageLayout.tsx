@@ -12,7 +12,7 @@ interface PageLayoutProps {
 const PageLayout: React.FC<PageLayoutProps> = ({ children, section }) => {
   return (
     <div 
-      className="min-h-screen flex flex-col relative"
+      className="min-h-screen flex flex-col relative mobile-bg-cover-fix"
       style={{
         backgroundImage: section.backgroundImage ? `url(${section.backgroundImage})` : undefined,
         backgroundSize: 'cover',

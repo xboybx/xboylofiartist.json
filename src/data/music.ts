@@ -52,23 +52,47 @@ import { MusicRelease, PageSection } from '../types';
 //   }
 // ];
 
+const backgroundImages = [
+  "https://wallpapercave.com/wp/wp9749583.jpg",
+  "https://wallpapercave.com/wp/wp9749467.jpg",
+  "https://wallpapercave.com/wp/wp9749624.jpg",
+  "https://wallpapercave.com/wp/wp9749663.jpg",
+  "https://wallpapercave.com/wp/wp9749585.jpg",
+  "https://wallpapercave.com/wp/wp9749586.jpg",
+  " https://i.pinimg.com/1200x/7e/e1/2a/7ee12a4a3769f5f4c8cc0b1c730dbdb7.jpg",
+  "https://i.pinimg.com/1200x/99/1a/ed/991aed12e721d00354b128d4b28840fb.jpg"
+];
+const mobileBackgroundImages = [
+  "https://rare-gallery.com/thumbnail/1390408-Lofi-Chillhop-Raccoon-Night-Camping-Bonfire-Digital.jpg",
+  "https://rare-gallery.com/thumbnail/1394377-Digital-Art-Lofi-Bedroom-Raccoon.jpg",
+  "https://i.pinimg.com/736x/77/22/70/772270c5505d5f911e930e9981dd4a21.jpg",
+  "https://i.pinimg.com/1200x/c0/90/19/c09019723801b0c61af6f91c3f91a04d.jpg",
+  "https://i.pinimg.com/736x/e9/de/4f/e9de4f00f746b2fb52ab2f6334b12d04.jpg",
+  "https://i.pinimg.com/1200x/45/5d/86/455d86a51234ce8d73a892e0956f884e.jpg"
+];
+function getRandomImage() {
+  return backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+}
+function getRandomMobileImage() {
+  return mobileBackgroundImages[Math.floor(Math.random() * mobileBackgroundImages.length)];
+}
 export const pageSections: Record<string, PageSection[]> = {
   home: [
     {
       id: 'hero',
       title: 'Welcome',
-      backgroundImage: 'https://wallpapercat.com/w/middle-retina/b/2/4/5823981-3840x2160-desktop-hd-lofi-forest-background.jpg',
-      mobileBackgroundImage: 'https://wallpapercat.com/w/middle-retina/b/2/4/5823981-3840x2160-desktop-hd-lofi-forest-background.jpg'
+      backgroundImage: getRandomImage(),
+      mobileBackgroundImage: getRandomMobileImage()
     },
     {
       id: 'navigation',
       title: 'Navigation',
-      backgroundImage: 'https://wallpapercat.com/w/full/2/3/9/5823958-3840x2160-desktop-hd-lofi-forest-background-photo.jpg',
-      mobileBackgroundImage: 'https://wallpapercat.com/w/middle-retina/1/e/a/5823954-4100x2310-desktop-hd-lofi-forest-background.jpg'
+      backgroundImage: getRandomImage(),
+      mobileBackgroundImage: getRandomMobileImage()
     },  {
       id: '',
       title: '',
-      backgroundImage:"",
+      backgroundImage: "",
       mobileBackgroundImage: ""
     }
   ],
@@ -90,5 +114,33 @@ export const pageSections: Record<string, PageSection[]> = {
       title: 'Get In Touch',
       backgroundImage: ''
     }
+  ]
+};
+export const updatesData = {
+  latestRelease: {
+    title: "Midnight Dreams",
+    date: "2023-12-15",
+    description: "A collection of ambient lofi beats designed for late night studying and relaxation.",
+    coverImage: "https://images.pexels.com/photos/1694900/pexels-photo-1694900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    links: {
+      spotify: "https://spotify.com",
+      appleMusic: "https://music.apple.com",
+      soundcloud: "https://soundcloud.com",
+      youtube: "https://youtube.com"
+    }
+  },
+  news: [
+    {
+      id: 1,
+        text: "New track out She's Blossom.",
+      date: "04-08-2025"
+    },
+    {
+      id: 2,
+        text: "New Album dropping soon! Stay tuned for more dreamy vibes.",
+      date: "SEPTEMBER"
+     
+    }
+
   ]
 };

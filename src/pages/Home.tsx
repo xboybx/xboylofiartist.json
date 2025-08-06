@@ -7,10 +7,13 @@ import Footer from '../components/Layout/Footer';
 import MusicPlayer from '../components/MusicPlayer';
 import { RiSpotifyFill,RiAppleFill,RiSoundcloudFill } from '@remixicon/react';
 import LofiVisualizer from '../components/LofiVisualizer';
+import { updatesData } from '../data/music';
 
 const Home: React.FC = () => {
   const [embedData, setEmbedData] = useState<{embedCode?: string, embedType?: 'spotify' | 'soundcloud' | undefined, musicReleases?: any[]}>({});
   const [isSecondSection, setIsSecondSection] = useState(false);
+  const [showUpdates, setShowUpdates] = useState(false);
+  const latestRelease = embedData.musicReleases?.find((release: any) => release.latest);
 
   useEffect(() => {
     fetch('/musicData.json')
@@ -49,6 +52,37 @@ const Home: React.FC = () => {
               X.BOY
             </h1>
             <p className='text-white italic text-light'>Crafting tranquil, dreamy lo-fi soundscapes that soothe the soul and slow down time.</p>
+            <button
+              aria-label="Show updates"
+              className="mt-4 flex flex-col items-center mx-auto focus:outline-none"
+              onClick={() => setShowUpdates(v => !v)}
+            >
+              <span className="text-white text-xs">New Updates</span>
+              <svg className={`w-6 h-6 text-white transition-transform duration-300 ${showUpdates ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            {showUpdates && (
+              <div className="mt-4 bg-white/10 border border-white/20 rounded-lg p-4 w-full max-w-md mx-auto shadow-lg backdrop-blur-sm">
+                <h3 className="text-white text-lg font-semibold mb-2">Latest Release</h3>
+                {latestRelease ? (
+                  <div className="mb-4">
+                    <div className="w-full rounded-lg overflow-hidden border border-white/20">
+                      <div className="w-full h-full" dangerouslySetInnerHTML={{ __html: latestRelease.embedCode }} />
+                    </div>
+                    <div className="text-white font-bold mt-2">{latestRelease.title}</div>
+                    <div className="text-white text-xs">{latestRelease.releaseDate}</div>
+                    <div className="text-white text-sm mt-1">{latestRelease.description}</div>
+                  </div>
+                ) : (
+                  <div className="text-white text-sm">No latest release found.</div>
+                )}
+                <h4 className="text-white text-md font-semibold mt-4 mb-2">News</h4>
+                <ul className="list-disc pl-5">
+                  {updatesData.news.map(news => (
+                    <li key={news.id} className="text-white text-sm mb-1">{news.text} <span className="text-xs text-gray-300">({news.date})</span></li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </motion.div>
           <Footer/>
         </div>

@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
             <a href="https://music.amazon.in/artists/B0F13HMSYF/x-boy?referrer=https://xboyartist.netlify.app/" className="text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
               <RiAmazonLine size={24} />
             </a>
-            <a href="https://www.youtube.com/@xboybx/" target='__main' className="text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
+            <a href="https://music.youtube.com/channel/UCnMcgsQVAQcsYePlI8mDWrQ?si=Ec5R4oLfCw8o1wXo" target='__main' className="text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
               <RiYoutubeLine size={24} />
             </a>
           </motion.div>

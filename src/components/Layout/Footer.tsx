@@ -8,23 +8,23 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center space-y-4 ">
         <div className="md:flex md:items-center md:justify-between w-full items-center space-x-6">
           <div className="flex justify-center md:justify-start space-x-6">
-           <a href="https://www.instagram.com/xboy.bx/" target='__main' className="text-white hover:text-gray-300 transition-colors" aria-label="Instagram">
+           <a href="https://www.instagram.com/xboy.bx/" target='__main' className="icon-marquee text-white hover:text-gray-300 transition-colors" aria-label="Instagram">
               <RiInstagramFill size={24} />
             </a>
-            <a href="https://open.spotify.com/artist/5WHZ7ZLFTcVzF1hJZgJzgp" target='__main' className="text-white hover:text-gray-300 transition-colors" aria-label="Twitter">
+            <a href="https://open.spotify.com/artist/5WHZ7ZLFTcVzF1hJZgJzgp" target='__main' className="icon-marquee text-white hover:text-gray-300 transition-colors" aria-label="Twitter">
               <RiSpotifyFill size={24} />
             </a>
            
-            <a href="https://music.apple.com/in/artist/x-boy/1800881639" target='__main' className="text-white hover:text-gray-300 transition-colors" aria-label="SoundCloud">
+            <a href="https://music.apple.com/in/artist/x-boy/1800881639" target='__main' className="icon-marquee text-white hover:text-gray-300 transition-colors" aria-label="SoundCloud">
               <RiAppleFill size={24} />
             </a>
-             <a href="https://soundcloud.com/xboybx" target='__main' className="text-white hover:text-gray-300 transition-colors" aria-label="Twitter">
+             <a href="https://soundcloud.com/xboybx" target='__main' className="icon-marquee text-white hover:text-gray-300 transition-colors" aria-label="Twitter">
               <RiSoundcloudFill size={24} />
             </a>
-            <a href="https://music.amazon.in/artists/B0F13HMSYF/x-boy?referrer=https://xboyartist.netlify.app/" className="text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
+            <a href="https://music.amazon.in/artists/B0F13HMSYF/x-boy?referrer=https://xboyartist.netlify.app/" className="icon-marquee text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
               <RiAmazonFill size={24} />
             </a>
-            <a href="https://www.youtube.com/@xboybx/" target='__main' className="text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
+            <a href="https://www.youtube.com/@xboybx/" target='__main' className="icon-marquee text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
               <RiYoutubeFill size={24} />
             </a>
           </div>
