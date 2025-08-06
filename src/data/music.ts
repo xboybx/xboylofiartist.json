@@ -65,7 +65,6 @@ const backgroundImages = [
 const mobileBackgroundImages = [
   "https://rare-gallery.com/thumbnail/1390408-Lofi-Chillhop-Raccoon-Night-Camping-Bonfire-Digital.jpg",
   "https://rare-gallery.com/thumbnail/1394377-Digital-Art-Lofi-Bedroom-Raccoon.jpg",
-  "https://i.pinimg.com/736x/77/22/70/772270c5505d5f911e930e9981dd4a21.jpg",
   "https://i.pinimg.com/1200x/c0/90/19/c09019723801b0c61af6f91c3f91a04d.jpg",
   "https://i.pinimg.com/736x/e9/de/4f/e9de4f00f746b2fb52ab2f6334b12d04.jpg",
   "https://i.pinimg.com/1200x/45/5d/86/455d86a51234ce8d73a892e0956f884e.jpg"
