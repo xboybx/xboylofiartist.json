@@ -17,9 +17,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/5 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-6xl mx-auto  sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-16 items-center ">
           <div className="flex-shrink-0">
-            <NavLink to="/" className="font-semibold tracking-tight text-xl text-white">
+            <NavLink to="/" className="font-semibold  text-xl text-white ml-[165px]">
               X.BOY
             </NavLink>
           </div>
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-white focus:outline-none"
+              className="p-2 rounded-md text-white focus:outline-none "
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
