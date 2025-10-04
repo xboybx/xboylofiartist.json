@@ -5,8 +5,53 @@
 
 
   "musicReleases": [
-  {
+    {
     "id": "release-1",
+    "title": "Antler Valley Horizon",
+    "releaseDate": "2025-09-14",
+    "coverImage": "https://i.scdn.co/image/ab67616d0000b273988680d78172078f918811d8",
+    "description": "",
+    "links": {
+      "spotify": "https://open.spotify.com/album/2rnew4pd9mtwqRaUMG1m1A?si=Iw6vqLS3Qb2eNMoV0uzkNg",
+      "appleMusic": "https://music.apple.com/in/album/antler-valley-horizon-ep/1843978237",
+      "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mCcTjgqkDc9WQgzWDJOi6JNRhi-kHtr7k&si=aP2_-WSHGCRLNZ6Y"
+    },
+    "featured": false,
+    "latest": true,
+    "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/2rnew4pd9mtwqRaUMG1m1A?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+  },
+     {
+    "id": "release-2",
+    "title": "Nights Without You",
+    "releaseDate": "2025-08-31",
+    "coverImage": "https://i.scdn.co/image/ab67616d0000b27330596245ac41f0876b17a1fc",
+    "description": "",
+    "links": {
+      "spotify": "https://open.spotify.com/album/22ZiJzqMh4AwLpP4VAsbHY?si=_h5_L38zSrmgEevOdJwsjQ",
+      "appleMusic": "https://music.apple.com/in/album/nights-withou-you-single/1834988681",
+      "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_kQ6NK2GzHgDgwvkLmC9cKFpoWbqwXpwr0&si=CDYT_0VmGkNFdLrN"
+    },
+    "featured": false,
+    "latest": false,
+    "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/3tATvYbj0qO2CafZqJMsk4?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+  }, 
+  {
+    "id": "release-3",
+    "title": "Misty Rails",
+    "releaseDate": "2025-08-30",
+    "coverImage": "https://i.scdn.co/image/ab67616d0000b273bc5affa4f28bbcaf9284d16c",
+    "description": "",
+    "links": {
+      "spotify": "https://open.spotify.com/track/7uHnRIeNjFq08o0JIA6tXa?si=a955699f078f4491",
+      "appleMusic": "https://open.spotify.com/track/7uHnRIeNjFq08o0JIA6tXa?si=a955699f078f4491",
+      "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nPYcZRmqgKfR0gJeBuBKRiBKBNx2MB21g&si=FBxwatf7T8U4e4n0"
+    },
+    "featured": false,
+    "latest": false,
+    "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7uHnRIeNjFq08o0JIA6tXa?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+  },
+  {
+    "id": "release-4",
     "title": "She's Blossom",
     "releaseDate": "2025-08-04",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273063fb7db93311a6194cdbe63",
@@ -17,11 +62,11 @@
       "youtube": "https://music.youtube.com/watch?v=vyu0W9aebuE&si=vlwAxtcLzNoVDdPb"
     },
     "featured": false,
-    "latest": true,
+    "latest": false,
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/2l2Z3QrlhnCifBpya5pWOh?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-2",
+    "id": "release-5",
     "title": "Long Return",
     "releaseDate": "2025-07-01",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273551807c57eb802aa6f2c13fb",
@@ -36,7 +81,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/3cJdFBYv7Wca8CYA7shGqE?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-3",
+    "id": "release-6",
     "title": "Lonely Port Radio",
     "releaseDate": "2025-06-15",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b2735c71f5d568f93dcef5a66585",
@@ -51,7 +96,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/60m4oAgV90sBFvhnqcDxhL?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-4",
+    "id": "release-7",
     "title": "Snooze Orbit",
     "releaseDate": "2025-05-24",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273ce31aae109f8548dfeecb70d",
@@ -66,7 +111,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4VYNCntcU4Btaj7z189ypX?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-5",
+    "id": "release-8",
     "title": "Ethereal",
     "releaseDate": "2025-05-10",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273bccc390dcbde8753dde6d6a0",
@@ -81,7 +126,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7a2PlGJeBOdusRzKzrwltl?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-6",
+    "id": "release-9",
     "title": "Tanoshi",
     "releaseDate": "2025-04-30",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273cc8159732b624efe62db6431",
@@ -96,7 +141,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4q6rtpF5vHHRqpvIX96dJ1?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-7",
+    "id": "release-10",
     "title": "Slow Down",
     "releaseDate": "2025-04-19",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273035408478e480d35d0aacd90",
@@ -110,7 +155,7 @@
     "latest": false,
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7fWk3Ome9945Z940L5RIYi?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
 },  {
-    "id": "release-8",
+    "id": "release-11",
     "title": "Serene Drift",
     "releaseDate": "2025-04-06",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273f1c98ae5169f00aeede6bfbf",
@@ -125,7 +170,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7fWk3Ome9945Z940L5RIYi?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-9",
+    "id": "release-12",
     "title": "Leisure",
     "releaseDate": "2025-04-01",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273deb52f725667419c7cb1836b",
@@ -140,7 +185,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2FK9SzCkwYqdwTxABUIcJa?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-10",
+    "id": "release-13",
     "title": "Slow Dunes",
     "releaseDate": "2025-03-30",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
@@ -155,7 +200,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2gHSuhs7zAXoebjsArO8cw?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-11",
+    "id": "release-14",
     "title": "Haven",
     "releaseDate": "2025-03-25",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
@@ -170,7 +215,7 @@
     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/380iUBmTxZPpNsR6hjaJyF?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "id": "release-12",
+    "id": "release-15",
     "title": "Cosmic Pause",
     "releaseDate": "2025-03-20",
     "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",

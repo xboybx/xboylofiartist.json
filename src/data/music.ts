@@ -131,13 +131,13 @@ export const updatesData = {
   news: [
     {
       id: 1,
-        text: "New track out She's Blossom.",
-      date: "04-08-2025"
+        text: "New Album out Antler Valley Horizon",
+      date: "14-09-2025"
     },
     {
       id: 2,
         text: "New Album dropping soon! Stay tuned for more dreamy vibes.",
-      date: "SEPTEMBER"
+      date: "SOON"
      
     }
 
