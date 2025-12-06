@@ -5,11 +5,13 @@ import PageLayout from '../components/Layout/PageLayout';
 import { pageSections } from '../data/music';
 import Footer from '../components/Layout/Footer';
 import { updatesData } from '../data/music';
+import { Settings, X } from 'lucide-react';
 
 const Home: React.FC = () => {
   const [embedData, setEmbedData] = useState<{embedCode?: string, embedType?: 'spotify' | 'soundcloud' | undefined, musicReleases?: any[]}>({});
   const [isSecondSection, setIsSecondSection] = useState(false);
   const [showUpdates, setShowUpdates] = useState(false);
+  const [showDev, setShowDev] = useState(false);
   const latestRelease = embedData.musicReleases?.find((release: any) => release.latest);
 
   useEffect(() => {
@@ -54,12 +56,23 @@ const Home: React.FC = () => {
               className="mt-4 flex flex-col items-center mx-auto focus:outline-none"
               onClick={() => setShowUpdates(v => !v)}
             >
-              <span className="text-white text-xs">New Updates</span>
+              <span className=" text-xs  text-gray-300 bg-gradient-to-r from-white via-slate-600 to-white bg-200% bg-clip-text  text-transparent animate-gradient-loader [text-fill-color:transparent] [-webkit-text-fill-color:transparent][-webkit-background-clip:text]">
+                New Updates</span>
               
               <svg className={`w-6 h-6 mt-1 text-white transition-transform duration-300 ${showUpdates ? 'rotate-180' : 'rotate-0'}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
             </button>
             {showUpdates && (
-              <div className="mt-4 bg-white/10 border border-white/20 rounded-lg p-4 w-full max-w-md mx-auto shadow-lg backdrop-blur-sm">
+              <div className="mt-4 bg-white/10 border border-white/20 rounded-lg p-4 w-full max-w-md mx-auto shadow-lg backdrop-blur-sm relative">
+                <div className="absolute top-2 right-2">
+                  <button onClick={() => setShowDev(v => !v)} className="text-white/70 hover:text-white block">
+                    {showDev ? <X size={16} /> : <Settings size={16} />}
+                  </button>
+                  {showDev && (
+                    <div className="absolute bottom-full left-full ml-1 mb-1 bg-white/10 border border-white/20 rounded-lg p-2 w-auto shadow-lg backdrop-blur-sm">
+                      <a href="https://dev-profile-eta-five.vercel.app/" target="__main" className="text-white text-xs whitespace-nowrap">Know Me</a>
+                    </div>
+                  )}
+                </div>
                 <h3 className="text-white text-lg font-semibold mb-2">Latest Release</h3>
                 {latestRelease ? (
                   <div className="mb-4">

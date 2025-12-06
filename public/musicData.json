@@ -8,10 +8,14 @@
       "releaseDate": "",
       "coverImage": "",
       "description": "",
-      "links": {},
+      "links": {
+        "spotify": "https://open.spotify.com/album/2rnew4pd9mtwqRaUMG1m1A?si=Iw6vqLS3Qb2eNMoV0uzkNg",
+        "appleMusic": "https://music.apple.com/in/album/antler-valley-horizon-ep/1843978237",
+        "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mCcTjgqkDc9WQgzWDJOi6JNRhi-kHtr7k&si=aP2_-WSHGCRLNZ6Y"
+      },
       "featured": false,
       "latest": true,
-      "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/track/7H5CYparo83pM95JigYcLs?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7H5CYparo83pM95JigYcLs?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
     {
       "id": "release-2",
@@ -26,7 +30,7 @@
       },
       "featured": false,
       "latest": false,
-      "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/2rnew4pd9mtwqRaUMG1m1A?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/2rnew4pd9mtwqRaUMG1m1A?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
     {
       "id": "release-3",
@@ -41,7 +45,7 @@
       },
       "featured": false,
       "latest": false,
-      "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/22ZiJzqMh4AwLpP4VAsbHY?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/22ZiJzqMh4AwLpP4VAsbHY?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
     {
       "id": "release-4",
@@ -56,7 +60,7 @@
       },
       "featured": false,
       "latest": false,
-      "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/6BYSLRip3H4TIliBTNpIBH?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/6BYSLRip3H4TIliBTNpIBH?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
     {
       "id": "release-5",
@@ -71,330 +75,172 @@
       },
       "featured": false,
       "latest": false,
-      "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/2l2Z3QrlhnCifBpya5pWOh?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
-    },{
-    "id": "release-6",
-    "title": "Long Return",
-    "releaseDate": "2025-07-01",
-    "coverImage": "https://i.scdn.co/image/ab67616d0000b273551807c57eb802aa6f2c13fb",
-    "description": "",
-    "links": {
-      "spotify": "https://open.spotify.com/track/6R9wgjb1wPybIXrUH8XKFk?si=1ecb24470fdf4db3",
-      "appleMusic": "https://music.apple.com/in/album/long-return/1822523350?i=1822523353",
-      "youtube": "https://youtu.be/A7LEDzIvBTU"
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/2l2Z3QrlhnCifBpya5pWOh?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
-    "featured": false,
-    "latest": false,
-    "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/3eQQLfEqsttDIFK82Zf1SX?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
-  },
-  {
-    "id": "release-7",
-    "title": "Where Water Sleeps",
-    "releaseDate": "2025-04-30",
-    "coverImage": "https://i.scdn.co/image/ab67616d0000b2738e165e4fd41f442522aa371c",
-    "description": "",
-    "links": {
-      "spotify": "https://open.spotify.com/album/3cJdFBYv7Wca8CYA7shGqE",
-      "appleMusic": "https://music.apple.com/in/album/where-water-sleeps/1814493976",
-      "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lwLB-UFziG2duJmItTMNXEzEPSw91v1iI&si=YXUrEfuOwE18PvbF"
+    {
+      "id": "release-6",
+      "title": "Long Return",
+      "releaseDate": "2025-07-01",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273551807c57eb802aa6f2c13fb",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/6R9wgjb1wPybIXrUH8XKFk?si=1ecb24470fdf4db3",
+        "appleMusic": "https://music.apple.com/in/album/long-return/1822523350?i=1822523353",
+        "youtube": "https://youtu.be/A7LEDzIvBTU"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/3eQQLfEqsttDIFK82Zf1SX?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
-    "featured": true,
-    "latest": false,
-    "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/3cJdFBYv7Wca8CYA7shGqE?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
-  },
-  {
-    "id": "release-8",
-    "title": "Lonely Port Radio",
-    "releaseDate": "2025-06-15",
-    "coverImage": "https://i.scdn.co/image/ab67616d0000b2735c71f5d568f93dcef5a66585",
-    "description": "",
-    "links": {
-      "spotify": "https://open.spotify.com/album/60m4oAgV90sBFvhnqcDxhL?si=YZblkqhGT9mVfC29qpWt_Q",
-      "appleMusic": "https://music.apple.com/in/album/lonely-port-radio/1821398423",
-      "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nbj28Hx_k8Ud0jRkIfMUsKaM8WdzXtA9U&si=YFNhL5lVnY_-qO-h"
+    {
+      "id": "release-7",
+      "title": "Where Water Sleeps",
+      "releaseDate": "2025-04-30",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b2738e165e4fd41f442522aa371c",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/album/3cJdFBYv7Wca8CYA7shGqE",
+        "appleMusic": "https://music.apple.com/in/album/where-water-sleeps/1814493976",
+        "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lwLB-UFziG2duJmItTMNXEzEPSw91v1iI&si=YXUrEfuOwE18PvbF"
+      },
+      "featured": true,
+      "latest": false,
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/3cJdFBYv7Wca8CYA7shGqE?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
-    "featured": false,
-    "latest": false,
-    "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/60m4oAgV90sBFvhnqcDxhL?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
-  },
-  {
-    "id": "release-9",
-    "title": "Snooze Orbit",
-    "releaseDate": "2025-05-24",
-    "coverImage": "https://i.scdn.co/image/ab67616d0000b273ce31aae109f8548dfeecb70d",
-    "description": "",
-    "links": {
-      "spotify": "https://open.spotify.com/track/4VYNCntcU4Btaj7z189ypX?si=ac3084dcb97e451c",
-      "appleMusic": "https://music.apple.com/in/album/snooze-orbit/1814460888?i=1814460891",
-      "youtube": "https://youtu.be/-R5ANUOB_TY?si=60RE4ew1SxQjnboI"
+    {
+      "id": "release-8",
+      "title": "Lonely Port Radio",
+      "releaseDate": "2025-06-15",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b2735c71f5d568f93dcef5a66585",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/album/60m4oAgV90sBFvhnqcDxhL?si=YZblkqhGT9mVfC29qpWt_Q",
+        "appleMusic": "https://music.apple.com/in/album/lonely-port-radio/1821398423",
+        "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nbj28Hx_k8Ud0jRkIfMUsKaM8WdzXtA9U&si=YFNhL5lVnY_-qO-h"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/60m4oAgV90sBFvhnqcDxhL?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
-    "featured": false,
-    "latest": false,
-    "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/2DT92bMVqAMNxg6j14hFkT?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
-  },
-  {
-    "id": "release-10",
-    "title": "Ethereal",
-    "releaseDate": "2025-05-10",
-    "coverImage": "https://i.scdn.co/image/ab67616d0000b273bccc390dcbde8753dde6d6a0",
-    "description": "",
-    "links": {
-      "spotify": "https://open.spotify.com/track/7a2PlGJeBOdusRzKzrwltl?si=7472a6f1e6a742d7",
-      "appleMusic": "https://music.apple.com/in/album/ethereal/1812480911?i=1812480916",
-      "youtube": "https://youtu.be/fnZHxSbfeIg?si=2ZdLrv2TmHvwT-4j"
+    {
+      "id": "release-9",
+      "title": "Snooze Orbit",
+      "releaseDate": "2025-05-24",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273ce31aae109f8548dfeecb70d",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/4VYNCntcU4Btaj7z189ypX?si=ac3084dcb97e451c",
+        "appleMusic": "https://music.apple.com/in/album/snooze-orbit/1814460888?i=1814460891",
+        "youtube": "https://youtu.be/-R5ANUOB_TY?si=60RE4ew1SxQjnboI"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/2DT92bMVqAMNxg6j14hFkT?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
     },
-    "featured": false,
-    "latest": false,
-    "embedCode": "<iframe data-testid=\\\"embed-iframe\\\" style=\\\"border-radius:12px\\\" src=\\\"https://open.spotify.com/embed/album/7xs5zEXM12J2H78TYqrvgT?utm_source=generator\\\" width=\\\"100%\\\" height=\\\"152\\\" frameBorder=\\\"0\\\" allowfullscreen=\\\"\\\" allow=\\\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\\\" loading=\\\"lazy\\\"></iframe>"
-  }
+    {
+      "id": "release-10",
+      "title": "Ethereal",
+      "releaseDate": "2025-05-10",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273bccc390dcbde8753dde6d6a0",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/7a2PlGJeBOdusRzKzrwltl?si=7472a6f1e6a742d7",
+        "appleMusic": "https://music.apple.com/in/album/ethereal/1812480911?i=1812480916",
+        "youtube": "https://youtu.be/fnZHxSbfeIg?si=2ZdLrv2TmHvwT-4j"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/7xs5zEXM12J2H78TYqrvgT?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": "release-11",
+      "title": "Slow Down",
+      "releaseDate": "2025-04-19",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273035408478e480d35d0aacd90",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/0Cc5rJer1dD979xqBKd5JD?si=1c024405b5ea46b8",
+        "appleMusic": "https://music.apple.com/in/album/slow-down/1806709752?i=1806709756",
+        "youtube": "https://youtu.be/8ELqsq1yY1o?si=reAQBW2KHsDTW_JZ"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1928891549&color=%235d6349&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/slow-down\" title=\"Slow down\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Slow down</a></div>"
+    },
+    {
+      "id": "release-12",
+      "title": "Serene Drift",
+      "releaseDate": "2025-04-06",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273f1c98ae5169f00aeede6bfbf",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/7fWk3Ome9945Z940L5RIYi?si=9c71ff3ce59d46ef",
+        "appleMusic": "https://music.apple.com/in/album/serene-drift/1805512798?i=1805512799",
+        "youtube": "https://youtu.be/klplaLw9Sl8?si=RVhfmHGhN1RylPGS"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1871432802&color=%23748596&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/serene-drift\" title=\"serene drift\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">serene drift</a></div>"
+    },
+    {
+      "id": "release-13",
+      "title": "Leisure",
+      "releaseDate": "2025-04-01",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273deb52f725667419c7cb1836b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/2FK9SzCkwYqdwTxABUIcJa?si=b622d7772db646b2",
+        "appleMusic": "https://music.apple.com/in/album/leisure/1805504273?i=1805504293",
+        "youtube": "https://youtu.be/bMQsRZ_1bik?si=fGwX99clM8bQ9QRT"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1938900932&color=%23282a25&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/lesiure\" title=\"leisure\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">leisure</a></div>"
+    },
+    {
+      "id": "release-14",
+      "title": "Slow Dunes",
+      "releaseDate": "2025-03-30",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/2gHSuhs7zAXoebjsArO8cw?si=e3ed3aa7acd14529",
+        "appleMusic": "https://music.apple.com/in/album/slow-dunes/1806071436?i=1806071442",
+        "youtube": "https://youtu.be/on5rHHBFgOU?si=DZoJPeDa8ks56weP"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1984207463&color=%23bb8871&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/slow-dunes\" title=\"Slow Dunes\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Slow Dunes</a></div>"
+    },
+    {
+      "id": "release-15",
+      "title": "Haven",
+      "releaseDate": "2025-03-25",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/380iUBmTxZPpNsR6hjaJyF?si=DZoJPeDa8ks56weP",
+        "appleMusic": "https://music.apple.com/in/song/haven/1806708152",
+        "youtube": "https://youtu.be/BbWdHJLs9x0"
+      },
+      "featured": false,
+      "latest": false,
+      "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2052655836&color=%234b7649&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/haven\" title=\"Haven\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Haven</a></div>"
+    },
+    {
+      "id": "release-16",
+      "title": "Cosmic Pause",
+      "releaseDate": "2025-03-20",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
+      "description": "",
+      "links": {
+        "spotify": "https://open.spotify.com/track/2hpatfMhA7TGlTkCZXbrBu?si=DZoJPeDa8ks56weP",
+        "appleMusic": "https://music.apple.com/in/song/cosmic-pause/1801414981",
+        "youtube": "https://youtu.be/JYlu1CGvfbc"
+      },
+      "featured": true,
+      "latest": false,
+      "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1951544319&color=%23443e39&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/cosmic-pause\" title=\"Cosmic pause\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Cosmic pause</a></div>"
+    }
   ]
 }
-
-
-
-// {
-//   "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/3cJdFBYv7Wca8CYA7shGqE?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-//   "embedType": "spotify",
-
-
-//   "musicReleases": [
-//     {
-//     "id": "release-1",
-//     "title": "Antler Valley Horizon",
-//     "releaseDate": "2025-09-14",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273988680d78172078f918811d8",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/album/2rnew4pd9mtwqRaUMG1m1A?si=Iw6vqLS3Qb2eNMoV0uzkNg",
-//       "appleMusic": "https://music.apple.com/in/album/antler-valley-horizon-ep/1843978237",
-//       "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mCcTjgqkDc9WQgzWDJOi6JNRhi-kHtr7k&si=aP2_-WSHGCRLNZ6Y"
-//     },
-//     "featured": false,
-//     "latest": true,
-//     "embedCode": "<iframe width=\"100%\" height=\"450\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2102206183&color=%23848c8c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/sets/antler-valley-horizon\" title=\"Antler Valley Horizon\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Antler Valley Horizon</a></div>"
-//   },
-//      {
-//     "id": "release-2",  
-//     "title": "Nights Without You",
-//     "releaseDate": "2025-08-31",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b27330596245ac41f0876b17a1fc",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/album/22ZiJzqMh4AwLpP4VAsbHY?si=_h5_L38zSrmgEevOdJwsjQ",
-//       "appleMusic": "https://music.apple.com/in/album/nights-withou-you-single/1834988681",
-//       "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_kQ6NK2GzHgDgwvkLmC9cKFpoWbqwXpwr0&si=CDYT_0VmGkNFdLrN"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/3tATvYbj0qO2CafZqJMsk4?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
-//   }, 
-//   {
-//     "id": "release-3",
-//     "title": "Misty Rails",
-//     "releaseDate": "2025-08-30",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273bc5affa4f28bbcaf9284d16c",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/7uHnRIeNjFq08o0JIA6tXa?si=a955699f078f4491",
-//       "appleMusic": "https://open.spotify.com/track/7uHnRIeNjFq08o0JIA6tXa?si=a955699f078f4491",
-//       "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nPYcZRmqgKfR0gJeBuBKRiBKBNx2MB21g&si=FBxwatf7T8U4e4n0"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7uHnRIeNjFq08o0JIA6tXa?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
-//   },
-//   {
-//     "id": "release-4",
-//     "title": "She's Blossom",
-//     "releaseDate": "2025-08-04",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273063fb7db93311a6194cdbe63",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/696VpCJeaiTvRIhOKACB66?si=5c1591d919ac468e",
-//       "appleMusic": "https://music.apple.com/us/song/shes-blossom/1830193696",
-//       "youtube": "https://music.youtube.com/watch?v=vyu0W9aebuE"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/2l2Z3QrlhnCifBpya5pWOh?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
-//   },
-//   {
-//     "id": "release-5",
-//     "title": "Long Return",
-//     "releaseDate": "2025-07-01",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273551807c57eb802aa6f2c13fb",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/6R9wgjb1wPybIXrUH8XKFk?si=1ecb24470fdf4db3",
-//       "appleMusic": "https://music.apple.com/in/album/long-return/1822523350?i=1822523353",
-//       "youtube": "https://youtu.be/A7LEDzIvBTU"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/6R9wgjb1wPybIXrUH8XKFk?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
-//   },
-//    {
-//     "id": "release-6",
-//     "title": "Where Water Sleeps",
-//     "releaseDate": "2025-04-30",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b2738e165e4fd41f442522aa371c",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/album/3cJdFBYv7Wca8CYA7shGqE",
-//       "appleMusic": "https://music.apple.com/in/album/where-water-sleeps/1814493976",
-//       "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lwLB-UFziG2duJmItTMNXEzEPSw91v1iI&si=YXUrEfuOwE18PvbF"
-//     },
-//     "featured": true,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2097426051&color=%230c4a74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/where-water-sleeps\" title=\"Where Water Sleeps\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Where Water Sleeps</a></div>"
-//   },
-//   {
-//     "id": "release-7",
-//     "title": "Lonely Port Radio",
-//     "releaseDate": "2025-06-15",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b2735c71f5d568f93dcef5a66585",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/album/60m4oAgV90sBFvhnqcDxhL?si=YZblkqhGT9mVfC29qpWt_Q",
-//       "appleMusic": "https://music.apple.com/in/album/lonely-port-radio/1821398423",
-//       "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nbj28Hx_k8Ud0jRkIfMUsKaM8WdzXtA9U&si=YFNhL5lVnY_-qO-h"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2198803447&color=%23072f4f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/lonely-port-radio\" title=\"Lonely Port Radio\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Lonely Port Radio</a></div>"
-//   },
-//   {
-//     "id": "release-8",
-//     "title": "Snooze Orbit",
-//     "releaseDate": "2025-05-24",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273ce31aae109f8548dfeecb70d",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/4VYNCntcU4Btaj7z189ypX?si=ac3084dcb97e451c",
-//       "appleMusic": "https://music.apple.com/in/album/snooze-orbit/1814460888?i=1814460891",
-//       "youtube": "https://youtu.be/-R5ANUOB_TY?si=60RE4ew1SxQjnboI"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4VYNCntcU4Btaj7z189ypX?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
-//   },
-//   {
-//     "id": "release-9",
-//     "title": "Ethereal",
-//     "releaseDate": "2025-05-10",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273bccc390dcbde8753dde6d6a0",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/7a2PlGJeBOdusRzKzrwltl?si=7472a6f1e6a742d7",
-//       "appleMusic": "https://music.apple.com/in/album/ethereal/1812480911?i=1812480916",
-//       "youtube": "https://youtu.be/fnZHxSbfeIg?si=2ZdLrv2TmHvwT-4j"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1640335014&color=%2392bab6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/ethereal\" title=\"Ethereal\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Ethereal</a></div>"
-//   },
-//   {
-//     "id": "release-10",
-//     "title": "Tanoshi",
-//     "releaseDate": "2025-04-30",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273cc8159732b624efe62db6431",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/4q6rtpF5vHHRqpvIX96dJ1?si=c783c8cbe31b48eb",
-//       "appleMusic": "https://music.apple.com/in/album/tanoshi/1807346366?i=1807346368",
-//       "youtube": "https://youtu.be/G2gLFHBHJzE?si=unC-W0Lrm6YeGubc"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/4q6rtpF5vHHRqpvIX96dJ1?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
-//   },
-//   {
-//     "id": "release-11",
-//     "title": "Slow Down",
-//     "releaseDate": "2025-04-19",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273035408478e480d35d0aacd90",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/0Cc5rJer1dD979xqBKd5JD?si=1c024405b5ea46b8",
-//       "appleMusic": "https://music.apple.com/in/album/slow-down/1806709752?i=1806709756",
-//       "youtube": "https://youtu.be/8ELqsq1yY1o?si=reAQBW2KHsDTW_JZ"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1928891549&color=%235d6349&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/slow-down\" title=\"Slow  down\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Slow  down</a></div>"
-// },  {
-//     "id": "release-12",
-//     "title": "Serene Drift",
-//     "releaseDate": "2025-04-06",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273f1c98ae5169f00aeede6bfbf",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/7fWk3Ome9945Z940L5RIYi?si=9c71ff3ce59d46ef",
-//       "appleMusic": "https://music.apple.com/in/album/serene-drift/1805512798?i=1805512799",
-//       "youtube": "https://youtu.be/klplaLw9Sl8?si=RVhfmHGhN1RylPGS"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1871432802&color=%23748596&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/serene-drift\" title=\"serene drift\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">serene drift</a></div>"
-//   },
-//   {
-//     "id": "release-13",
-//     "title": "Leisure",
-//     "releaseDate": "2025-04-01",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273deb52f725667419c7cb1836b",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/2FK9SzCkwYqdwTxABUIcJa?si=b622d7772db646b2",
-//       "appleMusic": "https://music.apple.com/in/album/leisure/1805504273?i=1805504293",
-//       "youtube": "https://youtu.be/bMQsRZ_1bik?si=fGwX99clM8bQ9QRT"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1938900932&color=%23282a25&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/lesiure\" title=\"leisure\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">leisure</a></div>"
-//   },
-//   {
-//     "id": "release-14",
-//     "title": "Slow Dunes",
-//     "releaseDate": "2025-03-30",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/2gHSuhs7zAXoebjsArO8cw?si=e3ed3aa7acd14529",
-//       "appleMusic": "https://music.apple.com/in/album/slow-dunes/1806071436?i=1806071442",
-//       "youtube": "https://youtu.be/on5rHHBFgOU?si=DZoJPeDa8ks56weP"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1984207463&color=%23bb8871&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/slow-dunes\" title=\"Slow Dunes\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Slow Dunes</a></div>"
-//   },
-//   {
-//     "id": "release-15",
-//     "title": "Haven",
-//     "releaseDate": "2025-03-25",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/380iUBmTxZPpNsR6hjaJyF?si=DZoJPeDa8ks56weP",
-//       "appleMusic": "https://music.apple.com/in/song/haven/1806708152",
-//       "youtube": "https://youtu.be/BbWdHJLs9x0"
-//     },
-//     "featured": false,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2052655836&color=%234b7649&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/haven\" title=\"Haven\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Haven</a></div>"
-//   },
-//   {
-//     "id": "release-16",
-//     "title": "Cosmic Pause",
-//     "releaseDate": "2025-03-20",
-//     "coverImage": "https://i.scdn.co/image/ab67616d0000b273faebf324dc6cc6e09838664b",
-//     "description": "",
-//     "links": {
-//       "spotify": "https://open.spotify.com/track/2hpatfMhA7TGlTkCZXbrBu?si=DZoJPeDa8ks56weP",
-//       "appleMusic": "https://music.apple.com/in/song/cosmic-pause/1801414981",
-//       "youtube": "https://youtu.be/JYlu1CGvfbc"
-//     },
-//     "featured": true,
-//     "latest": false,
-//     "embedCode": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1951544319&color=%23443e39&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/xboybx\" title=\"X.BOY\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">X.BOY</a> · <a href=\"https://soundcloud.com/xboybx/cosmic-pause\" title=\"Cosmic pause\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Cosmic pause</a></div>"
-//   }
-// ]}

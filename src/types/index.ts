@@ -10,6 +10,9 @@ export interface MusicRelease {
     soundcloud?: string;
     youtube?: string;
   };
+  featured: boolean;
+  latest: boolean;
+  embedCode: string;
 }
 
 export interface PageSection {
