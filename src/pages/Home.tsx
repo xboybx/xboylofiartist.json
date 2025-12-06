@@ -9,7 +9,7 @@ import { Settings, X } from 'lucide-react';
 
 const Home: React.FC = () => {
   const [embedData, setEmbedData] = useState<{embedCode?: string, embedType?: 'spotify' | 'soundcloud' | undefined, musicReleases?: any[]}>({});
-  const [isSecondSection, setIsSecondSection] = useState(false);
+  // const [isSecondSection, setIsSecondSection] = useState(false);
   const [showUpdates, setShowUpdates] = useState(false);
   const [showDev, setShowDev] = useState(false);
   const latestRelease = embedData.musicReleases?.find((release: any) => release.latest);
@@ -21,18 +21,20 @@ const Home: React.FC = () => {
       .catch(err => console.error('Error loading music data:', err));
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const secondSection = document.getElementById('second-section');
-      if (secondSection) {
-        const rect = secondSection.getBoundingClientRect();
-        setIsSecondSection(rect.top <= window.innerHeight && rect.bottom >= 0);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+
+  //FOr now not used -check in future if may be useful
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const secondSection = document.getElementById('second-section');
+  //     if (secondSection) {
+  //       const rect = secondSection.getBoundingClientRect();
+  //       setIsSecondSection(rect.top <= window.innerHeight && rect.bottom >= 0);
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   handleScroll();
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <>
