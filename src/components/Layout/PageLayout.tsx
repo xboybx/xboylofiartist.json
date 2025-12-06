@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PageSection } from '../../types';
 import Navbar from './Navbar';
-// import Footer from './Footer';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -11,7 +10,7 @@ interface PageLayoutProps {
 
 const PageLayout: React.FC<PageLayoutProps> = ({ children, section }) => {
   return (
-    <div 
+    <motion.div 
       className="min-h-screen flex flex-col relative mobile-bg-cover-fix"
       style={{
         backgroundImage: section.backgroundImage ? `url(${section.backgroundImage})` : undefined,
@@ -19,6 +18,9 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, section }) => {
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeIn", duration: 0.5 }}
     >
       <div className="absolute inset-0 bg-black/10 backdrop-blur-[2px] z-0"></div>
       
@@ -43,7 +45,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, section }) => {
         </motion.main>
         
       </div>
-    </div>
+    </motion.div>
   );
 };
 

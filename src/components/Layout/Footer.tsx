@@ -1,6 +1,5 @@
 import React from 'react';
 import { RiSoundcloudFill,RiInstagramFill,RiYoutubeFill,RiSpotifyFill,RiAppleFill,RiAmazonFill } from "@remixicon/react";
-import MusicPlayer from '../MusicPlayer';
 
 const Footer: React.FC = () => {
   return (
