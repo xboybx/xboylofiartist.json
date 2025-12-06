@@ -47,17 +47,20 @@ const Home: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            <h1 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-4">
+            <h1 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-1">
               X.BOY
             </h1>
+            <p className='text-sm text-white/70 mb-4'>Lofi Music Producer</p>
             <p className='text-white italic text-light'>Crafting tranquil, dreamy lo-fi soundscapes that soothe the soul and slow down time.</p>
             <button
               aria-label="Show updates"
               className="mt-4 flex flex-col items-center mx-auto focus:outline-none"
               onClick={() => setShowUpdates(v => !v)}
             >
-              <span className=" text-xs  text-gray-300 bg-gradient-to-r from-white via-slate-600 to-white bg-200% bg-clip-text  text-transparent animate-gradient-loader [text-fill-color:transparent] [-webkit-text-fill-color:transparent][-webkit-background-clip:text]">
+              <span className=" text-xs  text-gray-200 ">
                 New Updates</span>
+              {/* <span className=" text-xs  text-gray-300 bg-gradient-to-r from-white via-slate-600 to-white bg-200% bg-clip-text  text-transparent animate-gradient-loader [text-fill-color:transparent] [-webkit-text-fill-color:transparent][-webkit-background-clip:text]">
+                New Updates</span> */}
               
               <svg className={`w-6 h-6 mt-1 text-white transition-transform duration-300 ${showUpdates ? 'rotate-180' : 'rotate-0'}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
             </button>
@@ -78,7 +81,7 @@ const Home: React.FC = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.3 }}
-                      className="absolute bottom-full left-full ml-1 mb-1 bg-white/10 border border-white/20 rounded-lg p-2 w-auto shadow-lg backdrop-blur-sm"
+                      className="absolute bottom-full md:left-full right-full md:right-auto mr-1 md:mr-0 md:ml-1 mb-1 bg-white/10 border border-white/20 rounded-lg p-2 w-auto shadow-lg backdrop-blur-sm"
                     >
                       <a href="https://dev-profile-eta-five.vercel.app/" target="__main" className="text-white text-xs whitespace-nowrap">Know Me</a>
                     </motion.div>
