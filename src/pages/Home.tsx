@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/Layout/PageLayout';
 import { pageSections } from '../data/music';
 import Footer from '../components/Layout/Footer';
-import MusicPlayer from '../components/MusicPlayer';
-import { RiSpotifyFill,RiAppleFill,RiSoundcloudFill } from '@remixicon/react';
-import LofiVisualizer from '../components/LofiVisualizer';
 import { updatesData } from '../data/music';
 
 const Home: React.FC = () => {

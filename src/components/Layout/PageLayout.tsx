@@ -42,7 +42,6 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, section }) => {
           </section>
         </motion.main>
         
-        {/* <Footer /> */}
       </div>
     </div>
   );

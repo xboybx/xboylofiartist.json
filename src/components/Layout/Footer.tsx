@@ -4,7 +4,7 @@ import MusicPlayer from '../MusicPlayer';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white/5 backdrop-blur-sm border-t border-white/10 mt-auto w-full mb-2 rounded-full flex">
+    <footer className="bg-white/5 backdrop-blur-sm border-t border-white/10 mt-auto w-full mb-12 sm:mb-2 rounded-full flex">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col  space-y-2">
         <div className="md:flex md:items-center md:justify-between w-full items-center space-x-6">
           <div className="flex justify-center space-x-6 w-full">
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         </div>
         
       
-          <p className="text-center text-white/70 text-sm max-w-md mx-auto">Click any music platform above to experience the soothing lofi beats of X.BOY.</p>
+          <p className="text-center text-white/70 text-[8px] max-w-md mx-auto ">Click any music platform above to experience the soothing lofi beats of X.BOY.</p>
       
       </div>
     </footer>
