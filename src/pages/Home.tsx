@@ -64,13 +64,24 @@ const Home: React.FC = () => {
             {showUpdates && (
               <div className="mt-4 bg-white/10 border border-white/20 rounded-lg p-4 w-full max-w-md mx-auto shadow-lg backdrop-blur-sm relative">
                 <div className="absolute top-2 right-2">
-                  <button onClick={() => setShowDev(v => !v)} className="text-white/70 hover:text-white block">
+                  <motion.button
+                    onClick={() => setShowDev(v => !v)}
+                    className="text-white/70 hover:text-white block"
+                    animate={{ rotate: showDev ? 90 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
                     {showDev ? <X size={16} /> : <Settings size={16} />}
-                  </button>
+                  </motion.button>
                   {showDev && (
-                    <div className="absolute bottom-full left-full ml-1 mb-1 bg-white/10 border border-white/20 rounded-lg p-2 w-auto shadow-lg backdrop-blur-sm">
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.3 }}
+                      className="absolute bottom-full left-full ml-1 mb-1 bg-white/10 border border-white/20 rounded-lg p-2 w-auto shadow-lg backdrop-blur-sm"
+                    >
                       <a href="https://dev-profile-eta-five.vercel.app/" target="__main" className="text-white text-xs whitespace-nowrap">Know Me</a>
-                    </div>
+                    </motion.div>
                   )}
                 </div>
                 <h3 className="text-white text-lg font-semibold mb-2">Latest Release</h3>
