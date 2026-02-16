@@ -13,26 +13,25 @@ const Music: React.FC = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch('/musicData.json')
-      .then(res => res.json())
-      .then(data => {
-        setMusicReleases(data.musicReleases);
+    import('../services/musicService').then(({ getMusicReleases }) => {
+      getMusicReleases().then(data => {
+        setMusicReleases(data);
         setIsLoading(false);
-      })
-      .catch(err => {
+      }).catch(err => {
         console.error('Error loading music data:', err);
         setIsLoading(false);
       });
+    });
   }, []);
 
   return (
     <div className="relative  h-screen bg-[url(/cst.gif)] bg-cover bg-bottom ">
-      <NavLink 
-        to="/" 
+      <NavLink
+        to="/"
         className="absolute top-4 left-4 z-50 p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors"
       >
         <ArrowLeft className="text-white" size={24} />
-      </NavLink>  
+      </NavLink>
 
       <PageLayout section={pageSections.music[0]}>
         <div className="absolute inset-0 px-4 sm:px-8 lg:px-16 z-10 bg-opacity-30 flex flex-col justify-center">

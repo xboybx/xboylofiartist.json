@@ -15,9 +15,23 @@ export interface MusicRelease {
   embedCode: string;
 }
 
+export interface NewsItem {
+  id: string;
+  text: string;
+  date: string;
+}
+
+export interface AboutData {
+  id?: string;
+  content: string;
+  imageUrl: string;
+  email: string;
+  location: string;
+}
+
 export interface PageSection {
   id: string;
   title: string;
   backgroundImage?: string;
-   mobileBackgroundImage?:string;
+  mobileBackgroundImage?: string;
 }

@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import Music from './pages/Music';
 import About from './pages/About';
+import Admin from './pages/Admin';
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  
+
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/music" element={<Music />} />
         <Route path="/about" element={<About />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </AnimatePresence>
   );

@@ -1,12 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Music, Headphones, Coffee, ArrowLeft } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import PageLayout from '../components/Layout/PageLayout';
 import { pageSections } from '../data/music';
+import { getAboutData } from '../services/musicService';
+import { AboutData } from '../types';
 import "../index.css"
 
 const About: React.FC = () => {
+  const [data, setData] = useState<AboutData | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getAboutData().then((fetchedData) => {
+      if (fetchedData) {
+        setData({
+          content: fetchedData.content,
+          imageUrl: fetchedData.image_url, // Map Supabase snake_case to camelCase
+          location: fetchedData.location,
+          email: fetchedData.email,
+          id: fetchedData.id
+        });
+      }
+    }).finally(() => setLoading(false));
+  }, []);
+
+  // Default content if no DB data
+  const content = data?.content ||
+    "Hello, I'm X Boy, a lo-fi music producer creating dreamy, tranquil soundscapes that drift between space, sleep, and emotion. Based in India, I draw inspiration from late-night silence, early morning stillness, and the quiet feelings we all carry within.\n\nMy journey began with curiosity—exploring soft melodies and ambient textures that speak more through mood than words. What started as simple beat-making soon became a deep passion for crafting slow, emotional atmospheres that feel like a gentle pause in time.\n\nEvery track I produce is meant to be a moment of calm—a soundtrack for your inner world. Whether you're studying, relaxing, healing, or just staring at the stars, my music is here to stay beside you.";
+
+  const imageUrl = data?.imageUrl || "/profile.gif";
+  const location = data?.location || "Hyderabad, India";
+  const email = data?.email || "j.jaswanth@icloud.com";
+
   return (
     <div className="relative min-h-screen w-full bg-[#f8f5ec] bg-[url(https://c4.wallpaperflare.com/wallpaper/636/709/249/pixel-art-sea-beach-rocks-wallpaper-preview.jpg)] bg-cover">
       <motion.div
@@ -15,8 +42,8 @@ const About: React.FC = () => {
         exit={{ opacity: 0, x: -20 }}
         transition={{ duration: 0.5 }}
       >
-        <NavLink 
-          to="/" 
+        <NavLink
+          to="/"
           className="absolute top-4 left-4 z-50 p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors"
         >
           <ArrowLeft className="text-white" size={24} />
@@ -32,26 +59,26 @@ const About: React.FC = () => {
               className="md:col-span-1"
             >
               <div className="bg-gray-100 aspect-square mb-4 rounded-lg overflow-hidden">
-                <img 
-                  src="/profile.gif" 
-                  alt="Artist portrait" 
+                <img
+                  src={imageUrl}
+                  alt="Artist portrait"
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               <div className="space-y-3">
                 <div className="flex items-start">
                   <MapPin size={18} className="mr-2 mt-0.5 flex-shrink-0 text-gray-600" />
-                  <span>Hyderabad, India</span>
+                  <span>{location}</span>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Mail size={18} className="mr-2 mt-0.5 flex-shrink-0 text-gray-600" />
-                  <span className="break-all">j.jaswanth@icloud.com</span>
+                  <span className="break-all">{email}</span>
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -59,34 +86,24 @@ const About: React.FC = () => {
               className="md:col-span-2"
             >
               <h3 className="text-xl font-semibold mb-4">The Story</h3>
-              
-              <div className="space-y-4 text-gray-700">
-                <p>
-                 Hello, I'm X Boy, a lo-fi music producer creating dreamy, tranquil soundscapes that drift between space, sleep, and emotion. Based in India, I draw inspiration from late-night silence, early morning stillness, and the quiet feelings we all carry within.
-                </p>
-                
-                <p>
-                My journey began with curiosity—exploring soft melodies and ambient textures that speak more through mood than words. What started as simple beat-making soon became a deep passion for crafting slow, emotional atmospheres that feel like a gentle pause in time.
-                </p>
-                
-                <p>
-                 Every track I produce is meant to be a moment of calm—a soundtrack for your inner world. Whether you're studying, relaxing, healing, or just staring at the stars, my music is here to stay beside you.
-                </p>
+
+              <div className="space-y-4 text-gray-700 whitespace-pre-line">
+                {content}
               </div>
-              
+
               <h3 className="text-xl font-semibold mt-8 mb-4">Equipment & Process</h3>
-              
+
               <div className="space-y-3">
                 <div className="flex items-start">
                   <Music size={18} className="mr-2 mt-0.5 flex-shrink-0 text-gray-600" />
                   <span>Various MIDI Controllers</span>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Headphones size={18} className="mr-2 mt-0.5 flex-shrink-0 text-gray-600" />
                   <span>Ableton Live, FL Studio</span>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Coffee size={18} className="mr-2 mt-0.5 flex-shrink-0 text-gray-600" />
                   <span>Vinyl samples, field recordings, and a lot of coffee</span>
