@@ -6,6 +6,7 @@ import PageLayout from '../components/Layout/PageLayout';
 import MusicCard from '../components/Music/MusicCard';
 import { pageSections } from '../data/music';
 import { MusicRelease } from '../types';
+import { getMusicReleases } from '../services/musicService';
 
 const Music: React.FC = () => {
   const [musicReleases, setMusicReleases] = useState<MusicRelease[]>([]);
@@ -13,15 +14,15 @@ const Music: React.FC = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    import('../services/musicService').then(({ getMusicReleases }) => {
-      getMusicReleases().then(data => {
+    getMusicReleases()
+      .then((data) => {
         setMusicReleases(data);
         setIsLoading(false);
-      }).catch(err => {
+      })
+      .catch((err) => {
         console.error('Error loading music data:', err);
         setIsLoading(false);
       });
-    });
   }, []);
 
   return (

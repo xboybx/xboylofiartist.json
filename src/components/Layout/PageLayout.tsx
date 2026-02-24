@@ -10,24 +10,21 @@ interface PageLayoutProps {
 
 const PageLayout: React.FC<PageLayoutProps> = ({ children, section }) => {
   return (
-    <motion.div 
-      className="min-h-screen flex flex-col relative mobile-bg-cover-fix"
+    <motion.div
+      className="min-h-screen flex flex-col relative bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed"
       style={{
         backgroundImage: section.backgroundImage ? `url(${section.backgroundImage})` : undefined,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeIn", duration: 0.5 }}
     >
       <div className="absolute inset-0 bg-black/10 backdrop-blur-[2px] z-0"></div>
-      
+
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
-        
-        <motion.main 
+
+        <motion.main
           className="flex-grow pt-16"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -43,7 +40,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, section }) => {
             </div>
           </section>
         </motion.main>
-        
+
       </div>
     </motion.div>
   );

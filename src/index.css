@@ -31,15 +31,6 @@
 }
 
 
-@media (max-width: 640px) {
-  .mobile-bg-cover-fix {
-    background-size:cover !important;
-    /* background-position: center !important; */
-    background-repeat: no-repeat !important;
-  }
-}
-
-
 @keyframes animate-gradient-loader {
   0% {
     

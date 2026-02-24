@@ -6,6 +6,7 @@ import { pageSections } from '../data/music';
 import Footer from '../components/Layout/Footer';
 // import { updatesData } from '../data/music'; // Removed as we use dynamic data
 import { Settings, X } from 'lucide-react';
+import { getMusicReleases, getNewsItems, getTextBlock } from '../services/musicService';
 
 const Home: React.FC = () => {
   const [musicReleases, setMusicReleases] = useState<any[]>([]);
@@ -30,34 +31,33 @@ const Home: React.FC = () => {
   const embedData = { musicReleases };
 
   useEffect(() => {
-    import('../services/musicService').then(({ getMusicReleases, getNewsItems, getTextBlock }) => {
-
-      const getRandomBg = (val: string | null): string | null => {
-        if (!val) return null;
-        try {
-          // Attempt to parse as JSON array
-          const parsed = JSON.parse(val);
-          if (Array.isArray(parsed) && parsed.length > 0) {
-            return parsed[Math.floor(Math.random() * parsed.length)];
-          }
-          return val; // If not array, return as is
-        } catch {
-          return val; // If JSON parse fails, return as is
+    const getRandomBg = (val: string | null): string | null => {
+      if (!val) return null;
+      try {
+        // Attempt to parse as JSON array
+        const parsed = JSON.parse(val);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed[Math.floor(Math.random() * parsed.length)];
         }
-      };
+        return val; // If not array, return as is
+      } catch {
+        return val; // If JSON parse fails, return as is
+      }
+    };
 
-      // Fetch both releases and news
-      Promise.all([
-        getMusicReleases(),
-        getNewsItems(),
-        getTextBlock('home_hero_title'),
-        getTextBlock('home_hero_subtitle'),
-        getTextBlock('home_hero_desc'),
-        getTextBlock('home_hero_bg_desktop'),
-        getTextBlock('home_hero_bg_mobile'),
-        getTextBlock('home_sec2_bg_desktop'),
-        getTextBlock('home_sec2_bg_mobile')
-      ]).then(([releases, newsItems, title, subtitle, desc, heroDesktop, heroMobile, sec2Desktop, sec2Mobile]) => {
+    // Fetch both releases and news
+    Promise.all([
+      getMusicReleases(),
+      getNewsItems(),
+      getTextBlock('home_hero_title'),
+      getTextBlock('home_hero_subtitle'),
+      getTextBlock('home_hero_desc'),
+      getTextBlock('home_hero_bg_desktop'),
+      getTextBlock('home_hero_bg_mobile'),
+      getTextBlock('home_sec2_bg_desktop'),
+      getTextBlock('home_sec2_bg_mobile')
+    ])
+      .then(([releases, newsItems, title, subtitle, desc, heroDesktop, heroMobile, sec2Desktop, sec2Mobile]) => {
         setMusicReleases(releases);
         setNews(newsItems || []);
         if (title) setHeroTitle(title);
@@ -74,11 +74,10 @@ const Home: React.FC = () => {
         if (finalHeroMobile) setHeroBgMobile(finalHeroMobile);
         if (finalSec2Desktop) setSec2BgDesktop(finalSec2Desktop);
         if (finalSec2Mobile) setSec2BgMobile(finalSec2Mobile);
-
-      }).catch(err => {
+      })
+      .catch((err) => {
         console.error('Error loading music data:', err);
       });
-    });
   }, []);
 
 
@@ -232,11 +231,7 @@ const Home: React.FC = () => {
         </div>
       </PageLayout>
 
-      {/* <div className="min-h-[calc(100vh-8rem)] relative flex items-center justify-center bg-[url(/dad.gif)] bg-bottom">
-          <p className="italic text-white py-32 px-4 text-center text-xl relative z-10">
-            "Myself isn't Loud. Me is Music. Intuition is the only Listener"
-          </p>
-      </div> */}
+
 
     </>
   );
