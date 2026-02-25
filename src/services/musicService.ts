@@ -1,5 +1,5 @@
-
-import { supabase } from '../lib/supabase';
+import { collection, doc, getDocs, getDoc, setDoc, addDoc, updateDoc, deleteDoc, query, orderBy, limit } from "firebase/firestore";
+import { db } from '../lib/firebase';
 import { MusicRelease } from '../types';
 
 export interface SiteConfig {
@@ -8,111 +8,65 @@ export interface SiteConfig {
 }
 
 export const getMusicReleases = async (): Promise<MusicRelease[]> => {
-    const { data, error } = await supabase
-        .from('music_releases')
-        .select('*')
-        .order('release_date', { ascending: false });
-
-    if (error) {
+    try {
+        const q = query(collection(db, "music_releases"), orderBy("releaseDate", "desc"));
+        const snapshot = await getDocs(q);
+        return snapshot.docs.map(doc => ({
+            id: doc.id,
+            ...(doc.data() as Omit<MusicRelease, 'id'>)
+        }));
+    } catch (error) {
         console.error('Error fetching music releases:', error);
         throw error;
     }
-
-    return data.map((item: any) => ({
-        id: item.id,
-        title: item.title,
-        releaseDate: item.release_date,
-        coverImage: item.cover_image,
-        description: item.description,
-        links: item.links,
-        featured: item.featured,
-        latest: item.latest,
-        embedCode: item.embed_code
-    }));
 };
 
 export const getHomeEmbedCode = async (): Promise<string | null> => {
-    const { data, error } = await supabase
-        .from('site_config')
-        .select('value')
-        .eq('key', 'home_embed_code')
-        .single();
-
-    if (error) {
+    try {
+        const docRef = doc(db, "site_config", "home_embed_code");
+        const docSnap = await getDoc(docRef);
+        return docSnap.exists() ? docSnap.data().value : null;
+    } catch (error: any) {
         console.warn('Error fetching home embed code:', error.message);
         return null;
     }
-
-    return data?.value || null;
 };
 
 export const updateHomeEmbedCode = async (code: string): Promise<void> => {
-    const { error } = await supabase
-        .from('site_config')
-        .upsert({ key: 'home_embed_code', value: code });
-
-    if (error) throw error;
+    const docRef = doc(db, "site_config", "home_embed_code");
+    await setDoc(docRef, { value: code }, { merge: true });
 };
 
 export const createMusicRelease = async (release: Omit<MusicRelease, 'id'>): Promise<MusicRelease | null> => {
-    const { data, error } = await supabase
-        .from('music_releases')
-        .insert([{
-            title: release.title,
-            release_date: release.releaseDate,
-            cover_image: release.coverImage,
-            description: release.description,
-            links: release.links,
-            featured: release.featured,
-            latest: release.latest,
-            embed_code: release.embedCode
-        }])
-        .select()
-        .single();
-
-    if (error) throw error;
+    const docRef = await addDoc(collection(db, "music_releases"), {
+        title: release.title,
+        releaseDate: release.releaseDate,
+        coverImage: release.coverImage,
+        description: release.description,
+        links: release.links || {},
+        featured: release.featured || false,
+        latest: release.latest || false,
+        embedCode: release.embedCode || ''
+    });
 
     return {
-        id: data.id,
-        title: data.title,
-        releaseDate: data.release_date,
-        coverImage: data.cover_image,
-        description: data.description,
-        links: data.links,
-        featured: data.featured,
-        latest: data.latest,
-        embedCode: data.embed_code
+        id: docRef.id,
+        ...release
     };
 };
 
 export const updateMusicRelease = async (release: MusicRelease): Promise<void> => {
-    const { error } = await supabase
-        .from('music_releases')
-        .update({
-            title: release.title,
-            release_date: release.releaseDate,
-            cover_image: release.coverImage,
-            description: release.description,
-            links: release.links,
-            featured: release.featured,
-            latest: release.latest,
-            embed_code: release.embedCode
-        })
-        .eq('id', release.id);
-
-    if (error) throw error;
+    const docRef = doc(db, "music_releases", release.id);
+    const dataToUpdate = { ...release };
+    // @ts-ignore
+    delete dataToUpdate.id; // remove id from update data just in case
+    await updateDoc(docRef, dataToUpdate);
 };
 
 export const deleteMusicRelease = async (id: string): Promise<void> => {
-    const { error } = await supabase
-        .from('music_releases')
-        .delete()
-        .eq('id', id);
-
-    if (error) throw error;
+    await deleteDoc(doc(db, "music_releases", id));
 };
 
-// Seed function
 // Seed function
 export const seedDatabaseFromJSON = async () => {
     try {
@@ -126,34 +80,39 @@ export const seedDatabaseFromJSON = async () => {
 
         // Seed Releases
         if (data.musicReleases && Array.isArray(data.musicReleases)) {
-            const { error } = await supabase.from('music_releases').insert(
-                data.musicReleases.map((r: any) => ({
+            for (const r of data.musicReleases) {
+                await addDoc(collection(db, "music_releases"), {
                     title: r.title,
-                    release_date: r.releaseDate,
-                    cover_image: r.coverImage,
+                    releaseDate: r.releaseDate,
+                    coverImage: r.coverImage,
                     description: r.description,
-                    links: r.links,
-                    featured: r.featured,
-                    latest: r.latest,
-                    embed_code: r.embedCode
-                }))
-            );
-            if (error) console.error('Error seeding releases:', error);
+                    links: r.links || {},
+                    featured: r.featured || false,
+                    latest: r.latest || false,
+                    embedCode: r.embedCode || ''
+                });
+            }
         }
 
         // Seed News
         try {
-            const { count } = await supabase.from('news_items').select('*', { count: 'exact', head: true });
-            if (count === 0) {
-                await createNewsItem({ text: "Welcome to the new site!", date: new Date().toISOString().split('T')[0] });
+            const q = query(collection(db, "news_items"), limit(1));
+            const snapshot = await getDocs(q);
+            if (snapshot.empty) {
+                await addDoc(collection(db, "news_items"), {
+                    text: "Welcome to the new site!",
+                    date: new Date().toISOString().split('T')[0],
+                    created_at: new Date().toISOString()
+                });
             }
         } catch (e) { console.error('Error seeding news', e) }
 
         // Seed About
         try {
-            const { count: aboutCount } = await supabase.from('about_page').select('*', { count: 'exact', head: true });
-            if (aboutCount === 0) {
-                await updateAboutPage({
+            const q = query(collection(db, "about_page"), limit(1));
+            const snapshot = await getDocs(q);
+            if (snapshot.empty) {
+                await addDoc(collection(db, "about_page"), {
                     content: "Hello, I'm X Boy, a lo-fi music producer creating dreamy, tranquil soundscapes that drift between space, sleep, and emotion. Based in India, I draw inspiration from late-night silence, early morning stillness, and the quiet feelings we all carry within.",
                     imageUrl: "/profile.gif",
                     location: "Hyderabad, India",
@@ -162,8 +121,22 @@ export const seedDatabaseFromJSON = async () => {
             }
         } catch (e) { console.error('Error seeding about', e) }
 
+        // Seed Config
+        const defaultConfigs = [
+            { key: 'social_instagram', value: 'https://www.instagram.com/xboy.bx/' },
+            { key: 'social_spotify', value: 'https://open.spotify.com/artist/5WHZ7ZLFTcVzF1hJZgJzgp' },
+            { key: 'social_apple', value: 'https://music.apple.com/in/artist/x-boy/1800881639' },
+            { key: 'social_soundcloud', value: 'https://soundcloud.com/xboybx' },
+            { key: 'social_amazon', value: 'https://music.amazon.in/artists/B0F13HMSYF/x-boy?referrer=https://xboyartist.netlify.app/' },
+            { key: 'social_youtube', value: 'https://www.youtube.com/@xboybx/' }
+        ];
 
-        alert('Database seeded successfully!');
+        for (const conf of defaultConfigs) {
+            await setDoc(doc(db, "site_config", conf.key), { value: conf.value }, { merge: true });
+        }
+
+
+        alert('Database seeded successfully! (Firestore)');
         window.location.reload();
     } catch (err) {
         console.error('Seeding failed:', err);
@@ -174,93 +147,76 @@ export const seedDatabaseFromJSON = async () => {
 // --- NEWS ---
 
 export const getNewsItems = async () => {
-    const { data, error } = await supabase
-        .from('news_items')
-        .select('*')
-        .order('created_at', { ascending: false });
-
-    if (error) throw error;
-    return data;
+    const q = query(collection(db, "news_items"), orderBy("created_at", "desc"));
+    const snapshot = await getDocs(q);
+    return snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+    })) as any[];
 };
 
 export const createNewsItem = async (item: { text: string; date: string }) => {
-    const { data, error } = await supabase
-        .from('news_items')
-        .insert([item])
-        .select()
-        .single();
-
-    if (error) throw error;
-    return data;
+    const docRef = await addDoc(collection(db, "news_items"), {
+        ...item,
+        created_at: new Date().toISOString()
+    });
+    return {
+        id: docRef.id,
+        ...item,
+        created_at: new Date().toISOString()
+    };
 };
 
 export const deleteNewsItem = async (id: string) => {
-    const { error } = await supabase.from('news_items').delete().eq('id', id);
-    if (error) throw error;
+    await deleteDoc(doc(db, "news_items", id));
 };
 
 // --- ABOUT ---
 
 export const getAboutData = async () => {
-    const { data, error } = await supabase
-        .from('about_page')
-        .select('*')
-        .limit(1)
-        .single();
+    const q = query(collection(db, "about_page"), limit(1));
+    const snapshot = await getDocs(q);
+    if (snapshot.empty) return null;
 
-    if (error && error.code !== 'PGRST116') { // PGRST116 is "Row not found"
-        console.error(error);
-        return null;
-    }
-    return data;
+    return {
+        id: snapshot.docs[0].id,
+        ...snapshot.docs[0].data()
+    } as any;
 };
 
 export const updateAboutPage = async (data: { content: string; imageUrl: string; location: string; email: string }) => {
     const existing = await getAboutData();
 
-    if (existing) {
-        const { error } = await supabase
-            .from('about_page')
-            .update({
-                content: data.content,
-                image_url: data.imageUrl,
-                location: data.location,
-                email: data.email
-            })
-            .eq('id', existing.id);
-        if (error) throw error;
+    if (existing && existing.id) {
+        await updateDoc(doc(db, "about_page", existing.id), {
+            content: data.content,
+            imageUrl: data.imageUrl,
+            location: data.location,
+            email: data.email
+        });
     } else {
-        const { error } = await supabase
-            .from('about_page')
-            .insert([{
-                content: data.content,
-                image_url: data.imageUrl,
-                location: data.location,
-                email: data.email
-            }]);
-        if (error) throw error;
+        await addDoc(collection(db, "about_page"), {
+            content: data.content,
+            imageUrl: data.imageUrl,
+            location: data.location,
+            email: data.email
+        });
     }
 };
+
 // --- TEXT BLOCKS (Home Page Text) ---
 
 export const getTextBlock = async (blockKey: string): Promise<string> => {
-    const { data, error } = await supabase
-        .from('site_config')
-        .select('value')
-        .eq('key', blockKey)
-        .single();
-
-    if (error && error.code !== 'PGRST116') {
+    try {
+        const docRef = doc(db, "site_config", blockKey);
+        const docSnap = await getDoc(docRef);
+        return docSnap.exists() ? docSnap.data().value : '';
+    } catch (error: any) {
         console.warn(`Error fetching text block ${blockKey}:`, error);
         return '';
     }
-    return data?.value || '';
 };
 
 export const updateTextBlock = async (blockKey: string, text: string): Promise<void> => {
-    const { error } = await supabase
-        .from('site_config')
-        .upsert({ key: blockKey, value: text });
-
-    if (error) throw error;
+    await setDoc(doc(db, "site_config", blockKey), { value: text }, { merge: true });
 };

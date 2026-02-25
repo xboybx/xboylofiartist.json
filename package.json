@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@remixicon/react": "^4.6.0",
-    "@supabase/supabase-js": "^2.95.3",
     "axios": "^1.13.5",
+    "firebase": "^12.9.0",
     "framer-motion": "^11.0.3",
+    "https-proxy-agent": "^7.0.6",
     "lucide-react": "^0.344.0",
     "ogl": "^1.0.11",
     "react": "^18.3.1",
